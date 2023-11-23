@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+
+input,
+textarea {
+  font-size: 1rem;
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
+  padding: 4px;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
