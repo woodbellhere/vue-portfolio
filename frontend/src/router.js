@@ -3,6 +3,7 @@ const LoginPage = () => import("./pages/LoginPage.vue");
 const SearchPage = () => import("./pages/SearchPage.vue");
 const ProfilePage = () => import("./pages/ProfilePage.vue");
 const ProfileEditingPage = () => import("./pages/ProfileEditingPage.vue");
+const NotFoundPage = () => import("./pages/NotFoundPage.vue");
 import { createRouter, createWebHistory } from "vue-router";
 import { getJwtToken } from "./apis/auth";
 
@@ -31,6 +32,11 @@ const routeMap = [
     path: "/login",
     name: "login",
     component: LoginPage,
+  },
+  {
+    path: "/:pathMath(.*)",
+    name: "not_found",
+    component: NotFoundPage,
   },
 ];
 
